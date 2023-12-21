@@ -1,0 +1,110 @@
+/* menu css */
+a {
+    text-decoration: none;
+    padding-left: 20px;
+    color: white;
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+  
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #42899B;
+  }
+  
+  .navbar {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    margin-left: 35px;
+    padding: 10px;
+  }
+  
+  .logo {
+    font-size: 35px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+  }
+  
+  /* resposive menu  */
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #EEF5FF;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 12%;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  .overlay a {
+    padding: 0px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    padding: 20px;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    transform: scale(120%);
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  #OpenButton {
+    display: none;
+    color: white;
+  }
+  
+  #myNav {
+    background-color: #42899B;
+    opacity: 0.8;
+  }
+
+
+  /* media qury */
+
+  @media only screen and (max-width : 768px) {
+    #OpenButton {
+        display: block;
+      }
+    
+      .menu-bar {
+        display: none;
+      }
+  }
